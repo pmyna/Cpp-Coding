@@ -1,0 +1,6 @@
+Implement a class Course to manage the participants of a course.
+Implement a constructor to specify the title of the course and methods to enter names and matriculation numbers for each student, which are identified by a number (i.e. index) assigned to them. 
+It must be possible (via appropriate methods) to store the results of assessments (i.e. points achieved on tests) for each individual student and to calculate the average of the points achieved per student and per course. 
+Note that not all students take every test.
+Define the output operator << to output a list of results for the entire course. 
+A suitable test program must be created to test the class. 
