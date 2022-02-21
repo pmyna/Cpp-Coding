@@ -1,0 +1,24 @@
+Implement the Player and Team classes to manage a soccer tournament.
+A player has a name (string with length > 0), a transfer amount (int value in million €, ≥ 10 and ≤ 500) and a position, which is a value from the predefined enumeration Position (Position::Goal, Position::Defense, Position::Center and Position::Storm).
+
+For the class Player the following methods are to be implemented:
+
+- Constructor(s) with two or three parameters. Name (string), transfer sum (int) and position in that order. The position is optional and by default Position::Goal. If one of the supplied values does not meet the requirements (e.g. name with length 0 or transfer sum not in the allowed range), throw an exception of type runtime_error.
+
+- bool operator==(const Player&) const: For simplicity, it is assumed that the player names are unique. This method therefore returns true if the names of the two players are the same, false otherwise.
+
+- operator<<: An object of the type Player must be output in the form [name, transfer sum Mio Euro, position]. The predefined vector positionsnname can be used for the output of the enumeration values, e.g. [Ronaldo, 120 Mio Euro, Striker].
+
+A Team has a name (string with length > 0) and a roster (vector<player>). For the class Team the following methods are to be implemented:
+
+- Constructor(s) with one or two parameters, a name (string) and a playerlist(vector<player>) in that order. The player list is optional. If it is not specified, a team shall be created with an empty player list. If one of the supplied values does not meet the requirements (e.g., name with length 0) or if a player appears more than once in the roster (same name), an exception of type runtime_error shall be thrown.
+
+- vector<player> engage(const vector<player>&): Adds all players from the list received as parameters to the team. The new players are appended to the end of the team's roster in the order in which they appear in the parameter. If a player with the same name is already in the team, do not add him, but simply skip him. The list of skipped players must be returned in the original relative order.
+
+- operator<<: The output of an object of type Team must be in the form [name, {list of players}], for example [Barcelona, {[Messi, 180m euros, Striker], [Umtiti, 60m euros, Goalie]}].
+
+- Addition 1:
+Extend the class Team with a method string lineup() const. This returns the team line-up in the form of a string in the coding x-y-z (e.g. 4-4-2). Here, x is the number of defense players, y the number of midfielders and z the number of support players. It must be ensured that the line-up is a good one, i.e. there must be 11 players with exactly one goalkeeper. If this is not the case, throw an exception of type runtime error. (Note: The function to string() can be used to convert int values to strings).
+
+- Addition 2:
+Extend the team class with a method vector<player> dismiss(vector<position>). This removes all players from the team who occupy any of the positions that appear as entries in the parameter vector. The relative order of the players in the team must be maintained. The list of dismissed players must be returned in the original relative order.
