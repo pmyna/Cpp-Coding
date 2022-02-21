@@ -1,3 +1,9 @@
+/*
+* Analysing Weather Data
+*
+* Created: 01-2021
+* Author: pmyna
+*/
 #include <iostream>
 #include "weather.hpp"
 using namespace std;
