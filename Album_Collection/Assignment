@@ -1,0 +1,4 @@
+A fanatical CD collector friend of mine has asked you to write him a simple program to manage his collection. 
+He wants the following functions: For each album artist, name and style should be storable. 
+Input, change and deletion of entries should be possible. 
+A search should be possible either by artist, by album name or by style and should provide a list of all matching CDs.
