@@ -1,3 +1,10 @@
+/*
+* Student Course Library
+*
+* Created: 01-2021
+* Author: pmyna
+*/
+
 #include <iostream>
 #include <string>
 #include <vector>
