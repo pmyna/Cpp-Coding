@@ -1,5 +1,5 @@
 /*
-* Unidirected Euler Circuit
+* CD Collection Library
 *
 * Created: 11-2020
 * Author: pmyna
